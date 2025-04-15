@@ -74,6 +74,7 @@
             position: relative;
             padding: 4rem 2rem;
             text-align: center;
+            margin-top: 0;
         }
 
         .security-hero::before {
@@ -84,12 +85,18 @@
             right: 0;
             bottom: 0;
             background: rgba(0,0,0,0.7);
+            z-index: 1;
+        }
+
+        .security-hero h1,
+        .security-hero p {
+            position: relative;
+            z-index: 2;
         }
 
         .security-hero h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
-            position: relative;
             color: var(--accent-color);
             text-shadow: 0 0 10px rgba(0,255,0,0.5);
         }
@@ -98,7 +105,6 @@
             font-size: 1.2rem;
             max-width: 800px;
             margin: 0 auto;
-            position: relative;
         }
 
         .security-grid {
