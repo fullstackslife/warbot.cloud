@@ -169,25 +169,62 @@
                 gap: 1rem;
             }
         }
+
+        .header {
+            background-color: var(--secondary-color);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            height: 40px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .contact-hero {
+            margin-top: 80px;
+            background: linear-gradient(135deg, var(--secondary-color), #000000);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="/" class="logo">
-                <img src="assets/logo.png?v=1" alt="WarBot.Cloud Logo" class="logo">
-            </a>
-            <div class="nav-links">
-                <a href="/">Home</a>
-                <a href="/about.html">About</a>
-                <a href="/services.html">Services</a>
-                <a href="/simulations.html">Simulations</a>
-                <a href="/security.html">Security</a>
-                <a href="/documentation.html">Documentation</a>
-                <a href="/resources.html">Resources</a>
-                <a href="/blog.html">Blog</a>
-                <a href="/contact.html">Contact</a>
-            </div>
+    <header class="header">
+        <a href="index.html">
+            <img src="assets/logo.png" alt="WarBot.Cloud Logo" class="logo">
+        </a>
+        <nav class="nav-links">
+            <a href="services.html">Services</a>
+            <a href="simulations.html">Simulations</a>
+            <a href="security.html">Security</a>
+            <a href="documentation.html">Documentation</a>
+            <a href="resources.html">Resources</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
