@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WarBot.Cloud - Development Resources and Tools">
+    <meta name="keywords" content="AI combat, security testing, tactical development, development tools, resources">
+    <title>WarBot.Cloud - Resources</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <style>
+        :root {
+            --primary-color: #ff3e3e;
+            --secondary-color: #2a2a2a;
+            --background-color: #1a1a1a;
+            --text-color: #ffffff;
+            --accent-color: #00ff00;
+            --card-bg: #2d2d2d;
+            --card-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .resources-hero {
+            background: linear-gradient(135deg, var(--secondary-color), #000000);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .resources-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .resources-hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .resource-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.3s ease;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .resource-card h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .resource-card ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .resource-card li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .resource-card li:before {
+            content: "→";
+            color: var(--accent-color);
+            position: absolute;
+            left: 0;
+        }
+
+        .resource-card a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .resource-card a:hover {
+            color: var(--primary-color);
+        }
+
+        .download-section {
+            text-align: center;
+            padding: 2rem;
+            background: var(--card-bg);
+            margin: 2rem;
+            border-radius: 8px;
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        .download-button:hover {
+            background: #ff1a1a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">
+                <img src="assets/logo.svg" alt="WarBot.Cloud Logo" class="logo">
+            </a>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/services.html">Services</a>
+                <a href="/documentation.html">Documentation</a>
+                <a href="/resources.html" class="active">Resources</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="resources-hero">
+            <h1>Development Resources</h1>
+            <p>Essential tools and resources for AI-powered automation development</p>
+        </section>
+
+        <section class="resources-grid">
+            <div class="resource-card">
+                <h2>Development Tools</h2>
+                <ul>
+                    <li><a href="https://developer.android.com/studio" target="_blank">Android Studio</a> - Official Android development environment</li>
+                    <li><a href="https://www.python.org/downloads/" target="_blank">Python</a> - Programming language for automation</li>
+                    <li><a href="https://opencv.org/" target="_blank">OpenCV</a> - Computer vision library</li>
+                    <li><a href="https://developer.android.com/studio/command-line/adb" target="_blank">ADB</a> - Android Debug Bridge</li>
+                </ul>
+            </div>
+
+            <div class="resource-card">
+                <h2>Learning Resources</h2>
+                <ul>
+                    <li><a href="https://docs.opencv.org/" target="_blank">OpenCV Documentation</a> - Official documentation</li>
+                    <li><a href="https://developer.android.com/docs" target="_blank">Android Documentation</a> - Official Android docs</li>
+                    <li><a href="https://docs.python.org/3/" target="_blank">Python Documentation</a> - Official Python docs</li>
+                    <li><a href="https://www.tensorflow.org/tutorials" target="_blank">TensorFlow Tutorials</a> - Machine learning tutorials</li>
+                </ul>
+            </div>
+
+            <div class="resource-card">
+                <h2>Community Resources</h2>
+                <ul>
+                    <li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a> - Programming Q&A</li>
+                    <li><a href="https://github.com/" target="_blank">GitHub</a> - Code repository and collaboration</li>
+                    <li><a href="https://discord.gg/opencv" target="_blank">OpenCV Discord</a> - Community support</li>
+                    <li><a href="https://www.reddit.com/r/learnpython/" target="_blank">r/learnpython</a> - Python learning community</li>
+                </ul>
+            </div>
+
+            <div class="resource-card">
+                <h2>Testing Tools</h2>
+                <ul>
+                    <li><a href="https://www.selenium.dev/" target="_blank">Selenium</a> - Web automation testing</li>
+                    <li><a href="https://pytest.org/" target="_blank">PyTest</a> - Python testing framework</li>
+                    <li><a href="https://www.cypress.io/" target="_blank">Cypress</a> - End-to-end testing</li>
+                    <li><a href="https://www.jenkins.io/" target="_blank">Jenkins</a> - CI/CD automation</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="download-section">
+            <h2>Development Templates</h2>
+            <p>Download our starter templates and example code to kickstart your project</p>
+            <a href="#" class="download-button">Download Templates</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 WarBot.Cloud. All rights reserved.</p>
+    </footer>
+</body>
+</html> 
