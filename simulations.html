@@ -70,9 +70,10 @@
         }
 
         .hero {
-            text-align: center;
-            padding: 4rem 1rem;
             position: relative;
+            padding: 4rem 2rem;
+            text-align: center;
+            margin-top: 0;
         }
 
         .hero::before {
@@ -88,11 +89,12 @@
 
         .hero-content {
             position: relative;
+            z-index: 2;
             max-width: 800px;
             margin: 0 auto;
         }
 
-        h1 {
+        .hero h1 {
             font-size: 3.5rem;
             margin-bottom: 1rem;
             color: var(--accent-color);
@@ -107,10 +109,10 @@
         .cta-button {
             display: inline-block;
             padding: 1rem 2rem;
-            background-color: var(--primary-color);
+            background: var(--primary-color);
             color: white;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 4px;
             font-weight: bold;
             transition: transform 0.3s ease;
         }
@@ -121,16 +123,21 @@
         }
 
         .simulations {
-            padding: 4rem 1rem;
+            padding: 4rem 2rem;
             max-width: 1200px;
             margin: 0 auto;
+        }
+
+        .simulations h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--accent-color);
         }
 
         .simulation-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin-top: 2rem;
         }
 
         .simulation-card {
@@ -138,11 +145,34 @@
             padding: 2rem;
             border-radius: 10px;
             box-shadow: var(--card-shadow);
+            transition: transform 0.3s ease;
+        }
+
+        .simulation-card:hover {
+            transform: translateY(-5px);
         }
 
         .simulation-card h3 {
             color: var(--accent-color);
             margin-bottom: 1rem;
+        }
+
+        .simulation-card ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .simulation-card li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .simulation-card li:before {
+            content: "→";
+            color: var(--accent-color);
+            position: absolute;
+            left: 0;
         }
 
         footer {

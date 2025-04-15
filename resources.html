@@ -87,38 +87,36 @@
             z-index: 1;
         }
 
-        .resources-hero h1,
-        .resources-hero p {
+        .resources-hero h1 {
             position: relative;
             z-index: 2;
-        }
-
-        .resources-hero h1 {
-            font-size: 2.5rem;
+            font-size: 3.5rem;
             margin-bottom: 1rem;
             color: var(--accent-color);
             text-shadow: 0 0 10px rgba(0,255,0,0.5);
         }
 
         .resources-hero p {
+            position: relative;
+            z-index: 2;
             font-size: 1.2rem;
             max-width: 800px;
             margin: 0 auto;
         }
 
         .resources-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
             padding: 4rem 2rem;
             max-width: 1200px;
             margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
         }
 
         .resource-card {
             background: var(--card-bg);
             padding: 2rem;
-            border-radius: 8px;
+            border-radius: 10px;
             box-shadow: var(--card-shadow);
             transition: transform 0.3s ease;
         }
@@ -128,7 +126,7 @@
         }
 
         .resource-card h2 {
-            color: var(--primary-color);
+            color: var(--accent-color);
             margin-bottom: 1rem;
         }
 
@@ -151,24 +149,27 @@
         }
 
         .resource-card a {
-            color: var(--accent-color);
+            color: var(--text-color);
             text-decoration: none;
             transition: color 0.3s ease;
         }
 
         .resource-card a:hover {
-            color: var(--primary-color);
+            color: var(--accent-color);
         }
 
-        .download-section {
+        .cta-section {
             text-align: center;
-            padding: 2rem;
-            background: var(--card-bg);
-            margin: 2rem;
-            border-radius: 8px;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, var(--secondary-color), #000000);
         }
 
-        .download-button {
+        .cta-section h2 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .cta-button {
             display: inline-block;
             padding: 1rem 2rem;
             background: var(--primary-color);
@@ -176,12 +177,12 @@
             text-decoration: none;
             border-radius: 4px;
             font-weight: bold;
-            margin-top: 1rem;
-            transition: background 0.3s ease;
+            transition: transform 0.3s ease;
         }
 
-        .download-button:hover {
-            background: #ff1a1a;
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(255,62,62,0.4);
         }
     </style>
 </head>
@@ -253,10 +254,10 @@
             </div>
         </section>
 
-        <section class="download-section">
+        <section class="cta-section">
             <h2>Development Templates</h2>
             <p>Download our starter templates and example code to kickstart your project</p>
-            <a href="#" class="download-button">Download Templates</a>
+            <a href="#" class="cta-button">Download Templates</a>
         </section>
     </main>
 
