@@ -28,20 +28,35 @@
         }
 
         .doc-hero {
-            background: linear-gradient(135deg, var(--secondary-color), #000000);
+            background: url('assets/cyber-bg.jpg') center/cover;
+            position: relative;
             padding: 4rem 2rem;
             text-align: center;
+        }
+
+        .doc-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.7);
         }
 
         .doc-hero h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
+            position: relative;
+            color: var(--accent-color);
+            text-shadow: 0 0 10px rgba(0,255,0,0.5);
         }
 
         .doc-hero p {
             font-size: 1.2rem;
             max-width: 800px;
             margin: 0 auto;
+            position: relative;
         }
 
         .doc-container {
