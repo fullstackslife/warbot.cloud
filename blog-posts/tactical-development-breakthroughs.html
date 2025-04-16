@@ -225,6 +225,25 @@
             margin-top: 4rem;
         }
 
+        .blog-navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .prev-post, .next-post {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .prev-post:hover, .next-post:hover {
+            color: var(--primary-color);
+        }
+
         @media (max-width: 768px) {
             .blog-post {
                 margin: 1rem;
@@ -241,6 +260,11 @@
             }
 
             .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .blog-navigation {
                 flex-direction: column;
                 gap: 1rem;
             }
@@ -324,6 +348,11 @@
                 </ul>
 
                 <p>Experience the future of tactical development with WarBot.Cloud's cutting-edge simulation platform.</p>
+            </div>
+
+            <div class="blog-navigation">
+                <a href="security-testing-innovations.html" class="prev-post">← Previous: Security Testing Innovations</a>
+                <a href="ai-development-advances.html" class="next-post">Next: AI Development Advances →</a>
             </div>
 
             <a href="/blog.html" class="back-to-blog">Back to Blog</a>
