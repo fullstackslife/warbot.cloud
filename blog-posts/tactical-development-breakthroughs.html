@@ -228,9 +228,10 @@
         .blog-navigation {
             display: flex;
             justify-content: space-between;
-            margin-top: 2rem;
-            padding-top: 2rem;
+            margin: 2rem 0;
+            padding: 1rem 0;
             border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
         }
 
         .prev-post, .next-post {
@@ -238,10 +239,14 @@
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s ease;
+            padding: 0.5rem 1rem;
+            background: rgba(0, 255, 0, 0.1);
+            border-radius: 4px;
         }
 
         .prev-post:hover, .next-post:hover {
             color: var(--primary-color);
+            background: rgba(255, 62, 62, 0.1);
         }
 
         @media (max-width: 768px) {
